@@ -14,15 +14,8 @@ async function getAwait(url){
 document.addEventListener('DOMContentLoaded', async function() {
     console.log('DOM Content Loaded');
 
-    const overlay = document.querySelector('.overlay');
-    const classes = overlay.classList;
-    setTimeout(() => {
-        classes.toggle('hidden');
-    });
-
     //button event:
     submitModal.addEventListener('click', function(){
-        classes.toggle('hidden');
         const username = document.getElementById('username').value;   
         const apiUrl = `https://api.github.com/users/${username}`;
         console.log(username);
@@ -60,4 +53,3 @@ function showInfo(response){
     following.innerHTML = "Following: " + response.following;
     userImage.src = response.avatar_url;
 }
-
