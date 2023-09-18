@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,20 @@
   <link rel="stylesheet" href="./styles/main.css" />
 </head>
 
+
 <body>
-  <header class="header">
-    <input type="text" id="username" class="modalMessage input is-info inputField" placeholder="username">
-    <button id="submitModal" class="modalMessage button is-dark modalButt" type="submit">Submit</button>
-  </header>
   <main>
+
+
+    <div class="header">
+      <input type="text" id="username" class="modalMessage input is-info inputField" placeholder="username">
+      <button id="submitModal" class="modalMessage button modalButt" type="submit">Submit</button>
+    </div>
+
+
+
+
+    <!--START OF CARD-->
     <div class="card cardForm">
       <div class="card-content">
         <div class="media">
@@ -29,7 +38,6 @@
             <p class="subtitle is-6" id="login"></p>
           </div>
         </div>
-
         <div class="content">
           <p id="company" class="infoContent"></p>
           <p id="location" class="infoContent"></p>
@@ -42,8 +50,11 @@
       </div>
     </div>
   </main>
+  <!--END OF CARD-->
+
 
   <script src="./scripts/main.js"></script>
 </body>
+
 
 </html>

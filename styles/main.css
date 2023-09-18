@@ -1,27 +1,21 @@
 body {
-    /* display: flex;
-    flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
     min-height: 100vh;
     margin: 0;
     position: relative;
 }
 
-main{
+
+main {
     width: 100%;
     z-index: 1;
     background: black;
     color: #fafafa;
 }
 
-.header{
-    width: 100%;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    height: 30px;
-}
 
-.cardForm{
+.cardForm {
     border-radius: 15px;
     margin: auto;
     width: 500px;
@@ -29,18 +23,23 @@ main{
     margin-top: 50px;
 }
 
-.follow{
+
+.follow {
     display: flex;
     justify-content: space-around;
 }
 
-#userImage{
+
+#userImage {
     border-radius: 10px;
 }
 
-#clearForm{
+
+.header {
+    background-color: #333;
+    width: 100%;
     display: flex;
-    margin: 10px;
-    width: 95%;
-    margin-top: 50px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
 }
