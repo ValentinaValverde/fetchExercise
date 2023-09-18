@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fetch Exercise</title>
-    <link rel="stylesheet" href="./styles/main.css"/>
+    <!-- Bulma stylesheet below: -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./styles/main.css" />
 </head>
+
 <body>
-    
+    <main>
+        <div class="card cardForm">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img id="userImage">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <h1 id="name" class="infoContent title is-4"></h1>
+                  <p class="subtitle is-6" id="login"></p>
+                </div>
+              </div>
+          
+              <div class="content">
+                <p id="company" class="infoContent"></p>
+                <p id="location" class="infoContent"></p>
+                <p id="bio" class="infoContent"></p>
+                <div class="follow">
+                    <span id="followers"></span>
+                    <span id="following"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+        
+    <!-- Below is the modal: -->
+    <div class="overlay hidden">
+        <div class="myModal">
+            <div class="myModal-content">
+                <p class="modalMessage">Please log in to see your user information.</p>
+                <input type="text" id="username" class="modalMessage input is-info inputField" placeholder="username">
+                <button id="submitModal" class="modalMessage button is-dark modalButt" type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
 
     <script src="./scripts/main.js"></script>
 </body>
+
 </html>
