@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', async function() {
 
 //BELOW IS WORK FOR GENERATING INFO:
 const userImage = document.getElementById('userImage');
-
 const personName = document.getElementById('name');
 const login = document.getElementById('login');
 const company = document.getElementById('company');
@@ -61,3 +60,10 @@ function showInfo(response){
     userImage.src = response.avatar_url;
 }
 
+
+//Clear Form:
+const clearForm = document.getElementById('clearForm');
+
+clearForm.addEventListener('click', ()=>{
+    window.location.reload();
+})

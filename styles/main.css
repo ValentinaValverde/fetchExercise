@@ -30,7 +30,12 @@ main{
     border-radius: 10px;
 }
 
-
+#clearForm{
+    display: flex;
+    margin: 10px;
+    width: 95%;
+    margin-top: 50px;
+}
 
 
 
@@ -87,6 +92,5 @@ main{
 .inputField{
     width: 500px;
 }
-
 
 /* end modal styles :) */
