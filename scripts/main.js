@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     //button event:
     submitModal.addEventListener('click', function () {
+
         const username = document.getElementById('username').value;
         const apiUrl = `https://api.github.com/users/${username}`;
         console.log(username);
